@@ -4,23 +4,33 @@
     -webkit-font-smoothing: antialiased;
 }
 
-body {
-    box-sizing: border-box !important;
-    overflow: hidden !important;
-    position: relative !important;
-    height: 754px !important;
-}
-
 .row {
 	margin: 0;
 }
 
 @media (min-width: 992px) {
-.row {
-    padding: 0 10px;
+    .row {
+        padding: 0 10px;
+    }
 }
+
+@media (min-width: 992px) {
+    .col-md-6 {
+        width: 50%;
+    }
 }
+
 .row {
     margin-right: 0;
     margin-left: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0 0 10px;
 }

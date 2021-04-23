@@ -10,8 +10,6 @@
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    max-height: 100%;
-    width: 100%;
 }
 
 @media screen and (max-width: 768px) { .home .row {flex-wrap: wrap;} }
@@ -99,8 +97,6 @@
     content: attr(data-text);
     position: absolute;
     top: 0;
-    width: 100%;
-    height: 100%
 }
 
 .glitch:after {
@@ -111,11 +107,11 @@
 }
 
 .home .row .content .float-image.move-down {
-    animation: down 5s infinite alternate;
+    animation: down 4s infinite alternate;
 }
 
 .home .row .content .float-image.move-up {
-    animation: up 5s infinite alternate;
+    animation: up 4s infinite alternate;
 }
 
 .home .row .content .float-image {
@@ -145,7 +141,7 @@
         transform:translateY(0)
     }
     to {
-        transform:translateY(50px)
+        transform:translateY(40px)
     }
 }
 
@@ -154,7 +150,7 @@
         transform:translateY(0)
     }
     to {
-        transform:translateY(-50px)
+        transform:translateY(-40px)
     }
 }
 

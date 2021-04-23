@@ -35,16 +35,16 @@ function HomeProfile() {
                         <span>Download CV</span>
                     </button>
                 </div>
-                <img src={shape1} className="animated fadeIn move-down float-image" alt="shape" style={{left: "0%", bottom: "75.7866%"}} />
-                <img src={shape10} className="animated fadeIn move-up float-image" alt="shape" style={{left: "10%", bottom: "17.2009%"}} />
-                <img src={shape2} className="animated fadeIn move-down float-image" alt="shape" style={{left: "20%", bottom: "77.8563%"}} />
-                <img src={shape3} className="animated fadeIn move-down float-image" alt="shape" style={{left: "30%", bottom: "12.2139%"}} />
-                <img src={shape4} className="animated fadeIn move-down float-image" alt="shape" style={{left: "40%", bottom: "70.1844%"}} />
-                <img src={shape5} className="animated fadeIn move-down float-image" alt="shape" style={{left: "50%", bottom: "11.8483%"}} />
-                <img src={shape6} className="animated fadeIn move-up float-image" alt="shape" style={{left: "60%", bottom: "72.5472%"}} />
-                <img src={shape7} className="animated fadeIn move-up float-image" alt="shape" style={{left: "70%", bottom: "13.5643%"}} />
-                <img src={shape8} className="animated fadeIn move-up float-image" alt="shape" style={{left: "80%", bottom: "77.347%"}} />
-                <img src={shape9} className="animated fadeIn move-up float-image" alt="shape" style={{left: "90%", bottom: "10.0729%"}} />
+                <img src={shape1} className="animated fadeIn move-down float-image" alt="shape" style={{left: "0%", bottom: "74.7866%"}} />
+                <img src={shape10} className="animated fadeIn move-up float-image" alt="shape" style={{left: "10%", bottom: "20.2009%"}} />
+                <img src={shape2} className="animated fadeIn move-down float-image" alt="shape" style={{left: "20%", bottom: "76.8563%"}} />
+                <img src={shape3} className="animated fadeIn move-down float-image" alt="shape" style={{left: "30%", bottom: "22.2139%"}} />
+                <img src={shape4} className="animated fadeIn move-down float-image" alt="shape" style={{left: "40%", bottom: "69.1844%"}} />
+                <img src={shape5} className="animated fadeIn move-up float-image" alt="shape" style={{left: "50%", bottom: "21.8483%"}} />
+                <img src={shape6} className="animated fadeIn move-up float-image" alt="shape" style={{left: "60%", bottom: "71.5472%"}} />
+                <img src={shape7} className="animated fadeIn move-down float-image" alt="shape" style={{left: "70%", bottom: "23.5643%"}} />
+                <img src={shape8} className="animated fadeIn move-up float-image" alt="shape" style={{left: "80%", bottom: "67.347%"}} />
+                <img src={shape9} className="animated fadeIn move-up float-image" alt="shape" style={{left: "90%", bottom: "24.0729%"}} />
             </div>
             <div className="img col-md-6 col-xs-12">
                 <img width="100%" src={profilePic} alt="profile_pic" />
