@@ -1,0 +1,167 @@
+.achievements {
+    height: 754px;
+    background-color: #000;
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .achievements {
+        height: 2100px;
+    }
+}
+
+.achievements .row.top {
+    display: flex;
+    min-height: 80%;
+    display: block;
+    overflow: hidden;
+}
+
+.achievements .row.top .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2% 5%;
+}
+
+.achievements .row.top .content .achievements_container {
+    display: flex;
+    align-items: center;
+}
+
+.achievements .row.top .content .achievements_container .container {
+    max-width: 1600px;
+    overflow: hidden;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 1450px;
+    }
+}
+
+.service {
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 40px;
+}
+
+@media (max-width: 1300px) {
+    .service {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-4 {
+        width: 33.33333333%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .service {
+        padding: 0 10px;
+    }
+}
+@media (max-width: 991px) {
+    .service {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+}
+
+.service.border-side {
+    border-left: 1px solid #251170;
+    border-right: 1px solid #251170;
+}
+
+.icon svg {
+    font-size: 50px;
+    color: #eb83f8;
+}
+
+.service h4 {
+    color: #fff;
+    font-family: Poppins;
+    margin: 15px 0 9px;
+    font-size: 20px;
+}
+
+.service p {
+    font-family: Geneva, Tahoma, sans-serif;
+    color: #eee;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.achievements .row.top .content .baffle_text span {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 800;
+}
+
+.achievements .row.bottom {
+    min-height: 20%;
+    background-color: #251170;
+    display: flex;
+}
+
+.achievements .row.bottom .container {
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 991px) {
+    .achievements .row.bottom .container {
+        display: block;
+    }
+}
+
+.achievements .row.bottom .container .counter_component {
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .achievements .row.bottom .container .counter_component {
+        padding: 20px;
+    }
+}
+
+.achievements .row.bottom .container .counter_component .icon svg {
+    color: #fff !important;
+    font-size: 28px !important;
+    height: 36px !important;
+}
+
+.achievements .row.bottom .container .counter_component .value span {
+    color: #fff;
+    font-size: 30px;
+}
+
+.achievements .row.bottom .container .counter_component .value .symbol {
+    position: absolute;
+    font-size: 17px;
+    color: #eb83f8;
+}
+
+.achievements .row.bottom .container .counter_component .text {
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+}

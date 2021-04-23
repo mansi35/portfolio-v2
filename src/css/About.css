@@ -4,6 +4,12 @@
     height: 754px;
 }
 
+@media (max-width: 992px) {
+    .about {
+        height: 1000px;
+    }
+}
+
 .about .row {
     display: flex;
     overflow: hidden;
