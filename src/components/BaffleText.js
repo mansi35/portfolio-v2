@@ -28,7 +28,7 @@ function BaffleText({ text, revealDuration }) {
 
     intersection && intersection.intersectionRatio > 0.5 && count === 0
     ? baffleText()
-    : console.log('hi')
+    : console.log('not reached')
 
     return (
         <div>

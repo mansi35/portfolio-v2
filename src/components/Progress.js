@@ -17,13 +17,15 @@ function Progress({ name, value, delay }) {
         }, delay);
     }
 
-    intersection && intersection.intersectionRatio < 1
-    ? showProgress()
-    : showProgress()
+    if (intersection) {
+        intersection && intersection.intersectionRatio < 1
+        ? console.log("not reached")
+        : showProgress();
+    }
 
     return (
         <div>
-            <div className="progress-container">
+            <div ref={sectionRef} className="progress-container">
                 <span className="name">{name}</span>
                 <span className="value"><CountUp start={0} end={perc} />%</span>
                 <div className="progress" style={{width: `${perc}%`}}></div>
