@@ -5,6 +5,7 @@ import { faSmileBeam, faPizzaSlice, faCode, faQuoteRight } from '@fortawesome/fr
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Aos from "aos"
 import 'aos/dist/aos.css'
+import BaffleText from './BaffleText'
 
 function Achievements() {
     useEffect(() => {
@@ -16,7 +17,12 @@ function Achievements() {
                 <div className="content">
                     <div className="col-md-12">
                         <div className="line-text"><h4>Achievements</h4></div>
-                        <div className="heading" data-aos="flip-up"><span className="baffle_text"><span>What I Do</span></span></div>
+                        <div className="heading">
+                            <BaffleText
+                                text="I Am Proud Of"
+                                revealDuration={5000}
+                            />
+                        </div>
                         <div className="achievements-container" style={{minHeight: "452.4px"}}>
                             <div className="container">
                                 <AchievementContainer />
@@ -28,7 +34,7 @@ function Achievements() {
             <div className="bottom row">
                 <div className="container">
                     <div className="col-md-3">
-                        <div data-aos="fade-left" style={{opacity: "1", height: "auto"}}>
+                        <div data-aos="fade-up" data-aos-once={true} style={{opacity: "1", height: "auto"}}>
                             <div className="counter_component">
                                 <div className="icon">
                                     <FontAwesomeIcon icon={faSmileBeam} />                                
@@ -41,7 +47,7 @@ function Achievements() {
                         </div>
                     </div>
                     <div className="col-md-3">
-                        <div data-aos="fade-left" style={{opacity: "1", height: "auto"}}>
+                        <div data-aos="fade-up" data-aos-once={true} style={{opacity: "1", height: "auto"}}>
                             <div className="counter_component">
                                 <div className="icon">
                                     <FontAwesomeIcon icon={faPizzaSlice} />
@@ -54,7 +60,7 @@ function Achievements() {
                         </div>
                     </div>
                     <div className="col-md-3">
-                        <div data-aos="fade-right" style={{opacity: "1", height: "auto"}}>
+                        <div data-aos="fade-up" data-aos-once={true} style={{opacity: "1", height: "auto"}}>
                             <div className="counter_component">
                                 <div className="icon">
                                     <FontAwesomeIcon icon={faQuoteRight} />                                
@@ -67,7 +73,7 @@ function Achievements() {
                         </div>
                     </div>
                     <div className="col-md-3">
-                        <div data-aos="fade-right" style={{opacity: "1", height: "auto"}}>
+                        <div data-aos="fade-up" data-aos-once={true} style={{opacity: "1", height: "auto"}}>
                             <div className="counter_component">
                                 <div className="icon">
                                     <FontAwesomeIcon icon={faCode} />

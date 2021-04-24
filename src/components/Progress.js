@@ -1,43 +1,35 @@
-import React from 'react'
-import handleViewport from 'react-in-viewport'
+import React, { useRef, useState } from 'react'
+import { useIntersection } from 'react-use'
 import CountUp from 'react-countup'
 
-class Progress_Animation extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            value: 0,
-            inViewport: false,
-            animation_complete: false
-        }
-    }
+function Progress({ name, value, delay }) {
+    const sectionRef = useRef(null);
+    const [perc, setPerc] = useState(0);
+    const intersection = useIntersection(sectionRef, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 1
+    });
 
-    componentDidUpdate() {
-        if (this.state.inViewport !== this.props.inViewport && !this.state.animation_complete) {
-            this.setState({inViewport: this.props.inViewport})
-            this.setState({animation_complete: true})
-            this.showProgress()
-        }
-    }
-
-    showProgress() {
+    const showProgress = () => {
         setTimeout(() => { 
-            this.setState({value : this.props.value})
-        }, this.props.delay);
+            setPerc(value);
+        }, delay);
     }
 
-    
-    render() {
-        const { name } = this.props
-        return(
+    intersection && intersection.intersectionRatio < 1
+    ? showProgress()
+    : showProgress()
+
+    return (
+        <div>
             <div className="progress-container">
                 <span className="name">{name}</span>
-                <span className="value"><CountUp start={0} end={this.state.inViewport === true ? this.state.value : 0} />%</span>
-                <div className="progress" style={{width: `${this.state.value}%`}}></div>
+                <span className="value"><CountUp start={0} end={perc} />%</span>
+                <div className="progress" style={{width: `${perc}%`}}></div>
             </div>
-        )
-    }
+        </div>
+    )
 }
-const Progress = handleViewport(Progress_Animation);
 
 export default Progress

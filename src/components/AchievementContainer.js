@@ -14,7 +14,7 @@ function AchievementContainer() {
         return (
             <Row>
               <Col md={4} className="service">
-                <div data-aos="fade-right">
+                <div data-aos="fade-right" data-aos-once={true}>
                   <div className="icon">
                     <FontAwesomeIcon icon={faReact} />
                   </div>
@@ -29,7 +29,7 @@ function AchievementContainer() {
                 </div>
               </Col>
               <Col md={4} className="service border-side">
-                <div data-aos="fade-down">
+                <div data-aos="fade-down" data-aos-once={true}>
                   <div className="icon">
                     <FontAwesomeIcon icon={faAngular} />
                   </div>
@@ -44,7 +44,7 @@ function AchievementContainer() {
                 </div>
               </Col>
               <Col md={4} className="service">
-                <div data-aos="fade-left">
+                <div data-aos="fade-left" data-aos-once={true}>
                   <div className="icon">
                     <FontAwesomeIcon icon={faAws} />
                   </div>
@@ -59,7 +59,7 @@ function AchievementContainer() {
                 </div>
               </Col>
               <Col md={4} className="service">
-              <div  data-aos="fade-right">
+              <div  data-aos="fade-right" data-aos-once={true}>
                   <div className="icon">
                     <FontAwesomeIcon icon={faPencilRuler} className="solid" />
                   </div>
@@ -74,7 +74,7 @@ function AchievementContainer() {
                   </div>
               </Col>
               <Col md={4} className="service border-side">
-              <div data-aos="fade-up">
+              <div data-aos="fade-up" data-aos-once={true}>
                   <div className="icon">
                     <FontAwesomeIcon icon={faServer} className="solid" />
                   </div>
@@ -89,7 +89,7 @@ function AchievementContainer() {
                   </div>
               </Col>
               <Col md={4} className="service">
-              <div data-aos="fade-left">
+              <div data-aos="fade-left" data-aos-once={true}>
                   <div className="icon">
                     <FontAwesomeIcon icon={faRobot} className="solid" />
                   </div>
