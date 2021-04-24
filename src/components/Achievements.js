@@ -12,7 +12,7 @@ function Achievements() {
         Aos.init({duration: 2000});
     }, [])
     return (
-        <div className="achievements">
+        <div id="achievements" className="achievements">
             <div className="top row" style={{maxHeight: "603.2px"}}>
                 <div className="content">
                     <div className="col-md-12">
@@ -32,7 +32,7 @@ function Achievements() {
                 </div>
             </div>
             <div className="bottom row">
-                <div className="container">
+                <div data-aos="zoom-in" data-aos-once={true} className="container">
                     <AchievementStat Icon={faSmileBeam} value={100} text="Happy Clients" />
                     <AchievementStat Icon={faPizzaSlice} value={1000} text="Pizzas Ordered" />
                     <AchievementStat Icon={faQuoteRight} value={500} text="Reviews" />

@@ -3,6 +3,16 @@
 	padding: 0;
 }
 
+body {
+    overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    body {
+        overflow: visible;
+    }
+}
+
 .row {
 	margin: 0;
 }
@@ -33,3 +43,7 @@ p {
 p {
     margin: 0 0 10px;
 }
+
+/* #773993 */
+/* #251170 */
+/* #724940 */

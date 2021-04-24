@@ -3,7 +3,7 @@ import Tilt from 'react-tilt'
 
 function PortfolioProject({title, image}) {
     return (
-        <div className="portfolio_item">
+        <div data-aos="zoom-in" data-aos-once={true} className="portfolio_item">
             <div style={{opacity: 1, height: "auto"}}>
                 <img src={image} alt="Front-end Project" style={{maxHeight: "263.9px"}} />
                 <Tilt className="Tilt" options={{ scale: 1, max: 50 }}>                                

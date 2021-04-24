@@ -6,7 +6,7 @@ import '../css/About.css'
 
 function About() {
     return (
-        <div className="about">
+        <div id="about" className="about">
             <Particles className="particles" />
             <div className="about__profile row" style={{width: "100%"}}>
                 <AboutMe />

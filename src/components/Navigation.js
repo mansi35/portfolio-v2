@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import '../css/Navigation.css'
+import scrollToElement from 'scroll-to-element';
 
-function Navigation() {
+function Navigation(props) {
     library.add(faBars, faTimes);
     const active = () => {
         document.getElementById("bars").classList.add("active");
@@ -12,6 +13,43 @@ function Navigation() {
 
     const inactive = () => {
         document.getElementById("bars").classList.remove("active");
+    }
+
+    const sections = [
+        {
+            name: "Home"
+        },
+        {
+            name: "About"
+        },
+        {
+            name: "Achievements"
+        },
+        {
+            name: "Portfolio"
+        }
+    ]
+
+    const navScroll = (id, v) => {
+        inactive();
+        const el = document.getElementById(id)
+        scrollToElement(el, {
+            offset: 0,
+            ease: 'in-out-expo',
+            duration: 2000
+        }).on('end', () => {
+            props.change(v);
+        });
+    }
+
+    const items = () => {
+        return sections.map((value, index) => {
+            return (
+                <li key={index}>
+                    <button onClick={() => navScroll(value.name.toLowerCase(), index)}>{value.name}</button>
+                </li>
+            )
+        })
     }
 
     return (
@@ -23,12 +61,7 @@ function Navigation() {
                 <FontAwesomeIcon className="closeNav" icon="times" onClick={inactive} />
                 <div className="links">
                     <ul>
-                        <li><button>Home</button></li>
-                        <li><button>About</button></li>
-                        <li><button>Services</button></li>
-                        <li><button>Portfolio</button></li>
-                        <li><button>Testimonials</button></li>
-                        <li><button>Contact</button></li>
+                        {items()}
                     </ul>
                 </div>
             </div>

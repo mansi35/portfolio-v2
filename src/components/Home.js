@@ -5,7 +5,7 @@ import '../css/HomeProfile.css'
 
 function Home() {
     return (
-        <div className="home">
+        <div id="home" className="home">
             <div className="home__navigation row">
                 <Navigation />
             </div>

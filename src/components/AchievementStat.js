@@ -4,7 +4,7 @@ import React from 'react'
 function AchievementStat({Icon, value, text}) {
     return (
         <div className="col-md-3">
-            <div data-aos="fade-up" data-aos-once={true} style={{opacity: "1", height: "auto"}}>
+            <div style={{opacity: "1", height: "auto"}}>
                 <div className="counter_component">
                     <div className="icon">
                         <FontAwesomeIcon icon={Icon} />                                
