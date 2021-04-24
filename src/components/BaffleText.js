@@ -31,7 +31,7 @@ function BaffleText({ text, revealDuration }) {
     : console.log('not reached')
 
     return (
-        <div>
+        <div className="baffle">
             <span className="baffle_text">
                 <span ref={sectionRef} className="btext">{text}</span>
             </span>

@@ -6,13 +6,13 @@
 
 @media (max-width: 992px) {
     .achievements {
-        height: 2100px;
+        height: 2300px;
     }
 }
 
 .achievements .row.top {
     display: flex;
-    min-height: 80%;
+    min-height: 75%;
     display: block;
     overflow: hidden;
 }
@@ -116,7 +116,7 @@
 }
 
 .achievements .row.bottom {
-    min-height: 20%;
+    min-height: 25%;
     background-color: #251170;
     display: flex;
 }
