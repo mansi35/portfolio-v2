@@ -4,7 +4,13 @@
     position: relative;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 768px) {
+    .achievements {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 767px) {
     .achievements {
         height: 2300px;
     }
@@ -13,8 +19,17 @@
 .achievements .row.top {
     display: flex;
     min-height: 75%;
-    display: block;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .achievements .row.top {
+        min-height: 75%;
+        padding-top: 50px;
+        margin-bottom: 30px;
+    }
 }
 
 .achievements .row.top .content {
@@ -41,44 +56,15 @@
     margin-left: auto;
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 1450px;
-    }
-}
-
 .service {
     text-align: center;
     margin: 20px 0;
     padding: 0 40px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 768px) {
     .service {
-        padding: 0 10px;
-    }
-}
-
-@media (min-width: 992px) {
-    .col-md-4 {
-        width: 33.33333333%;
-    }
-}
-
-@media (max-width: 1300px) {
-    .service {
-        padding: 0 10px;
-    }
-}
-@media (max-width: 991px) {
-    .service {
-        padding: 0;
+        padding: 0 5px;
         margin-bottom: 50px;
     }
 }
@@ -126,12 +112,17 @@
     align-items: center;
 }
 
-
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .achievements .row.bottom .container {
         display: block;
     }
 }
+
+/* @media (max-width: 769px) {
+    .achievements .row.bottom .container {
+        display: flex;
+    }
+} */
 
 .achievements .row.bottom .container .counter_component {
     text-align: center;

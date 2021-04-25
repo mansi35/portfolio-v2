@@ -4,7 +4,13 @@
     position: relative;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 768px) {
+    .portfolio {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 767px) {
     .portfolio {
         height: 1900px;
     }
@@ -16,7 +22,7 @@
     padding: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .portfolio .row {
         display: block;
         flex-wrap: wrap;
@@ -32,7 +38,7 @@
     background-color: #251170;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .portfolio .row .side {
         height: 100px;
         width: 100%;
@@ -44,7 +50,7 @@
     text-align: center;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .portfolio .row .side .baffle {
         transform: inherit;
     }
@@ -61,7 +67,7 @@
     letter-spacing: 10px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .portfolio .row .side .baffle .baffle_text span {
         font-size: 40px;
         line-height: 40px;
@@ -87,7 +93,7 @@
     width: 33.3%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .portfolio .row .recent-works .portfolio_container .portfolio_item {
         width: 100%;
     }

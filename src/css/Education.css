@@ -4,7 +4,13 @@
     position: relative;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 768px) {
+    .educations {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 767px) {
     .educations {
         height: 1570px;
     }
@@ -63,6 +69,14 @@
     overflow: hidden;
 }
 
+@media (min-width: 768px) {
+    .educations .row.top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .educations .row.top .content {
     display: flex;
     justify-content: center;
@@ -84,22 +98,16 @@
     justify-content: center;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 767px) {
     .educations .row.top .content .educations_container .container {
-        max-width: 800px;
+        max-width: 300px;
         margin: auto;
-    }
-}
-
-@media (min-width: 992px) {
-    .educations .row.top .content .educations_container .container {
-        width: 970px;
     }
 }
 
 @media (min-width: 768px) {
     .educations .row.top .content .educations_container .container {
-        width: 750px;
+        width: 600px;
     }
 }
 
@@ -302,7 +310,7 @@
     transition: .5s;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .educations .row.bottom .client img {
         margin-top: 50px;
     }
@@ -312,42 +320,35 @@
     opacity: 1;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .educations .row.top .content .baffle_text span {
         font-size: 40px;
         line-height: 40px;
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .educations .row.top .content .educations_container {
         display: block;
         padding: 70px 0;
     }
 }
 
-@media (max-width: 768px) {
-    .educations .row.top .content .educations_container .container {
-        max-width: 400px;
-        margin: auto;
-    }
-}
-
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .educations .row.bottom {
         display: block;
         min-height: 62%;
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .educations .row.top {
         min-height: 38%;
     }
 }
 
-@media (max-width: 991px){
+@media (min-width: 768px){
     .educations .row.bottom {
-        margin: 50px 0;
+        margin: 0;
     }
 }
