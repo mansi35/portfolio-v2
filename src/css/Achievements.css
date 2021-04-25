@@ -16,6 +16,18 @@
     }
 }
 
+@media (max-width: 320px) {
+    .achievements {
+        height: 2400px;
+    }
+}
+
+@media (max-width: 280px) {
+    .achievements {
+        height: 2750px;
+    }
+}
+
 .achievements .row.top {
     display: flex;
     min-height: 75%;
@@ -99,6 +111,13 @@
     font-size: 60px;
     line-height: 60px;
     font-weight: 800;
+}
+
+@media (max-width: 767px) {
+    .achievements .row.top .content .baffle_text span {
+        font-size: 40px;
+        line-height: 40px;
+    }
 }
 
 .achievements .row.bottom {

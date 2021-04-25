@@ -16,6 +16,12 @@
     }
 }
 
+@media (max-width: 280px) {
+    .portfolio {
+        height: 1700px;
+    }
+}
+
 .portfolio .row {
     display: flex;
     min-height: 100%;
@@ -71,6 +77,13 @@
     .portfolio .row .side .baffle .baffle_text span {
         font-size: 40px;
         line-height: 40px;
+    }
+}
+
+@media (max-width: 280px) {
+    .portfolio .row .side .baffle .baffle_text span {
+        font-size: 28px;
+        line-height: 28px;
     }
 }
 

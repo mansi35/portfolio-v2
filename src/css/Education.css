@@ -16,6 +16,12 @@
     }
 }
 
+@media (max-width: 280px) {
+    .educations {
+        height: 1700px;
+    }
+}
+
 .slick-slider {
     position: relative;
     display: block;

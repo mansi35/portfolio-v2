@@ -79,6 +79,13 @@
     }
 }
 
+@media (max-width: 280px) {
+    .contact .row .side .baffle .baffle_text span {
+        font-size: 28px;
+        line-height: 28px;
+    }
+}
+
 .contact .row .form {
     display: flex;
     justify-content: center;
