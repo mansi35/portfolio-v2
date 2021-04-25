@@ -6,7 +6,7 @@
 
 @media (max-width: 992px) {
     .educations {
-        height: 1450px;
+        height: 1570px;
     }
 }
 
@@ -336,13 +336,13 @@
 @media (max-width: 991px) {
     .educations .row.bottom {
         display: block;
-        min-height: 60%;
+        min-height: 62%;
     }
 }
 
 @media (max-width: 991px) {
     .educations .row.top {
-        min-height: 40%;
+        min-height: 38%;
     }
 }
 

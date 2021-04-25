@@ -3,3 +3,147 @@
     background-color: #000;
     position: relative;
 }
+
+@media (max-width: 992px) {
+    .contact {
+        height: 640px;
+    }
+}
+
+.contact .row {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    padding: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .contact .row {
+        display: block;
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+}
+
+.contact .row .side {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #251170;
+    z-index: 1;
+}
+
+@media (max-width: 991px) {
+    .contact .row .side {
+        height: 100px;
+        width: 100%;
+    }
+}
+
+.contact .row .side .baffle {
+    transform: rotate(-90deg);
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .contact .row .side .baffle {
+        transform: inherit;
+    }
+}
+
+.contact .row .side .baffle .baffle_text span {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 60px;
+    margin: 10px 0 20px;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+@media (max-width: 991px) {
+    .contact .row .side .baffle .baffle_text span {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+.contact .row .form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20%;
+    background-color: #000;
+    padding-top: 20px;
+}
+
+.animated.fast {
+    animation-duration: .8s;
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,100%,0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.contact .row .form .form-container {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.contact .row .form .form-container input, .contact .row .form .form-container textarea {
+    overflow: visible;
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+    border: none;
+    border-bottom: 1px solid #555;
+    transition: .2s;
+    color: #fff;
+}
+
+.contact .row .form .form-container input:focus,.contact .row .form .form-container textarea:focus {
+    border-bottom: 1px solid #eb83f8;
+    outline: none
+}
+
+.submit {
+    padding-top: 20px;
+}
+
+.contact .particles {
+    position: absolute;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .contact .particles {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .contact .particles canvas {
+        height: 620px !important;
+    }
+}

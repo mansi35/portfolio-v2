@@ -6,7 +6,7 @@
 
 @media (max-width: 992px) {
     .portfolio {
-        height: 1830px;
+        height: 1900px;
     }
 }
 
@@ -20,6 +20,7 @@
     .portfolio .row {
         display: block;
         flex-wrap: wrap;
+        padding-top: 40px;
     }
 }
 

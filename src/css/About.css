@@ -45,6 +45,7 @@
     position: relative;
     left: 110px;
     flex-basis: inherit;
+    display: inline;
 }
 
 .line-text h4:after {
