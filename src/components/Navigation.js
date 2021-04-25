@@ -27,6 +27,12 @@ function Navigation(props) {
         },
         {
             name: "Portfolio"
+        },
+        {
+            name: "Education"
+        },
+        {
+            name: "Contact"
         }
     ]
 

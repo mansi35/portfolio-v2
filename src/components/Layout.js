@@ -1,104 +1,93 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { ThemeProvider } from './../context'
 import Navigation from './Navigation'
 import ScrollLock from 'react-scrolllock'
 var scrollToElement = require('scroll-to-element')
 
-class Layout extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      height: 0,
-      mobile: false,
-      scrolllock: 0,
-      width: 0,
-    }
-    this.sections = [
-      'home',
-      'about',
-      'achievements',
-      'portfolio',
-    ]
-    this.section_id = 0
-    this.scrolling = false
-    this.changeSection = this.changeSection.bind(this)
-  }
+function Layout(props) {
+	const { children } = props
+	const [height, setHeight] = useState(0);
+	const [mobile, setMobile] = useState(false);
+	const [scrolllock, setScrolllock] = useState(0);
+	const [width, setWidth] = useState(0);
 
-  updateDimensions = () => {
-    if (this.state.width !== window.innerWidth) {
-      window.location.reload()
-    }
-    this.setState({ height: window.innerHeight, width: window.innerWidth })
-    if (window.innerWidth < 1025) {
-      this.setState({ scrolllock: false })
-      if (window.innerWidth < 992) {
-        this.setState({ mobile: true })
-      }
-    } else {
-      this.setState({ mobile: false, scrolllock: true })
-    }
-  }
+	const sections = [
+		'home',
+		'about',
+		'achievements',
+		'portfolio',
+		'education',
+		'contact',
+	]
 
-  setDefaults() {
-    this.setState({
-      height: window.innerWidth < 992 ? 'auto' : window.innerHeight,
-      mobile: window.innerWidth < 992 ? true : false,
-      scrolllock: window.innerWidth < 1025 ? false : true,
-      width: window.innerWidth,
-    })
-  }
+	var section_id = 0;
+    var scrolling = false;
 
-  componentDidMount() {
-    this.setDefaults()
-    window.addEventListener('resize', this.updateDimensions)
-  }
+	const updateDimensions = () => {
+		if (width !== window.innerWidth) {
+			window.location.reload()
+		}
+		setHeight(window.innerHeight);
+		setWidth(window.innerWidth);
+		
+		if (window.innerWidth < 1025) {
+			setScrolllock(false);
+			if (window.innerWidth < 992) {
+				setMobile(true);
+			}
+		} else {
+			setMobile(false);
+			setScrolllock(true);
+		}
+	}
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateDimensions)
-  }
+	const setDefaults = () => {
+		window.innerWidth < 992 ? setHeight('auto') : setHeight(window.innerHeight);
+		window.innerWidth < 992 ? setMobile(true) : setMobile(false);
+		window.innerWidth < 1025 ? setScrolllock(false) : setScrolllock(true);
+		setWidth(window.innerWidth);
+	}
 
-  changeSection(id) {
-    this.section_id = id
-  }
+	useEffect(() => {
+		setDefaults();
+    	window.addEventListener('resize', updateDimensions);
+		return () => {
+			window.removeEventListener('resize', updateDimensions)
+		}
+	})
 
-  wheel(e) {
-    if (!this.scrolling && !this.state.mobile) {
-      this.scrolling = true
-      if (e.deltaY < 0) {
-        if (
-          this.sections[
-            (this.section_id + this.sections.length - 1) % this.sections.length
-          ] !== this.sections[this.sections.length - 1]
-        )
-          this.section_id =
-            (this.section_id + this.sections.length - 1) % this.sections.length
-      } else {
-        if (this.section_id !== this.sections.length - 1)
-          this.section_id = (this.section_id + 1) % this.sections.length
-      }
-      const el = document.getElementById(this.sections[this.section_id])
-      scrollToElement(el, {
-        offset: 0,
-        ease: 'in-out-expo',
-        duration: 2000,
-      }).on('end', () => {
-        this.scrolling = false
-      })
-    }
-  }
+	const changeSection = (id) => {
+		section_id = id
+	}
 
-  render() {
-    const { children } = this.props
-    return (
-      <ThemeProvider
-        value={{ height: this.state.mobile ? 'auto' : this.state.height }}
-      >
-        <Navigation change={this.changeSection} />
-        <div onWheel={e => this.wheel(e)}>{children}</div>
-        <ScrollLock isActive={this.state.scrolllock} />
-      </ThemeProvider>
-    )
-  }
+	const wheel = (e) => {
+		if (!scrolling && !mobile) {
+			scrolling = true;
+			if (e.deltaY < 0) {
+				if (sections[ (section_id + sections.length - 1) % sections.length ] !== sections[sections.length - 1])
+					section_id = (section_id + sections.length - 1) % sections.length
+			} else {
+				if (section_id !== sections.length - 1)
+					section_id = (section_id + 1) % sections.length
+			}
+			const el = document.getElementById(sections[section_id])
+			scrollToElement(el, {
+				offset: 0,
+				ease: 'in-out-expo',
+				duration: 2000,
+			}).on('end', () => {
+				scrolling = false
+			})
+		}
+	}
+
+	return (
+		<ThemeProvider value={{ height: mobile ? 'auto' : height }}>
+			<Navigation change={changeSection} />
+			<div onWheel={e => wheel(e)}>{children}</div>
+			<ScrollLock isActive={scrolllock} />
+      	</ThemeProvider>
+	)
 }
 
 export default Layout
