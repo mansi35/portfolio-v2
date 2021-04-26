@@ -1,42 +1,67 @@
-import React, { useRef, useState } from 'react'
-import { useIntersection } from 'react-use'
-import baffle from 'baffle-react/lib/baffle';
+import React from 'react'
+import Baffle from "baffle-react";
+import handleViewport from 'react-in-viewport'
 
-function BaffleText({ text, revealDuration }) {
-    const sectionRef = useRef(null);
-    const [count, setcount] = useState(0)
-    const intersection = useIntersection(sectionRef, {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.5
-    });
-
-    const b = baffle('.btext');
-
-    b.set({
-        character: "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*",
-        speed: 120
-    })
-
-    const baffleText = () => {
-        b.start();
-        b.reveal(revealDuration);
-        b.stop();
-        setcount(count+1);
+class Baffle_Text extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            value: 0,
+            inViewport: false,
+            animation_complete: false,
+            obfuscate: true,
+            force: false
+        }
     }
 
+    componentDidUpdate() {
+        if (this.state.inViewport !== this.props.inViewport && !this.state.animation_complete) {
+            this.setState({inViewport: this.props.inViewport})
+            this.setState({animation_complete: true})
+            this.setState({obfuscate: false})
+            this.forceUpdate()
+        }
+    }
 
-    intersection && intersection.intersectionRatio > 0.5 && count === 0
-    ? baffleText()
-    : console.log('not reached')
+    forceUpdate() {
+        const { revealDuration, revealDelay } = this.props
+        setTimeout(() => { 
+            this.setState({force:true})
+        }, revealDuration+revealDelay);
+    }
 
-    return (
-        <div className="baffle">
-            <span className="baffle_text">
-                <span ref={sectionRef} className="btext">{text}</span>
-            </span>
-        </div>
-    )
+    render() {
+        return(
+            <div className="baffle">
+                <span className="baffle_text">
+                    <span className="btext">{this.text()}</span>
+                </span>
+            </div>
+        )
+    }
+
+    text() {
+        const { text, revealDuration, revealDelay } = this.props
+        if (!this.state.force) {
+            return (
+                <span className="btext">
+                <Baffle
+                    speed={50}
+                    characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*"
+                    obfuscate={this.state.obfuscate}
+                    update={true}
+                    revealDuration={revealDuration}
+                    revealDelay={revealDelay}
+                >
+                    {text}
+                </Baffle>
+                </span>
+            )
+        } else {
+            return <span className="btext">{text}</span>
+        }
+    }
 }
+const BaffleText = handleViewport(Baffle_Text);
 
 export default BaffleText

@@ -18,10 +18,7 @@ function Achievements() {
                     <div className="col-md-12">
                         <div className="line-text"><h4>Achievements</h4></div>
                         <div className="heading">
-                            <BaffleText
-                                text="I Am Proud Of"
-                                revealDuration={5000}
-                            />
+                            <BaffleText text="I am Proud Of" revealDuration={500} revealDelay={500} />
                         </div>
                         <div className="achievements-container" style={{minHeight: "452.4px"}}>
                             <div className="container">

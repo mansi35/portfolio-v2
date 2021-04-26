@@ -14,10 +14,7 @@ function Educations() {
                             <h4>Education</h4>
                         </div>
                         <div className="heading">
-                            <BaffleText
-                                text="Proud Alumni Of"
-                                revealDuration={5000}
-                            />
+                            <BaffleText text="Proud Alumni Of" revealDuration={500} revealDelay={500} />
                         </div>
                         <EducationContainer />
                     </div>

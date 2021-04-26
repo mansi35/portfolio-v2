@@ -9,10 +9,11 @@ function Contact() {
             <div className="row">
                 <div class="side col-md-2">
                     <h2>
-                        <BaffleText
+                        {/*<BaffleText
                             text="CONTACT"
                             revealDuration={5000}
-                        />
+                        />*/}
+                        <BaffleText text="Contact" revealDuration={500} revealDelay={500} />
                     </h2>
                 </div>
 
