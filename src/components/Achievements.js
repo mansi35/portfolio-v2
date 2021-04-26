@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import AchievementContainer from './AchievementContainer'
 import '../css/Achievements.css'
-import { faSmileBeam, faPizzaSlice, faCode, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
+import { faSmileBeam, faCode, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Aos from "aos"
 import 'aos/dist/aos.css'
 import BaffleText from './BaffleText'
@@ -30,10 +31,10 @@ function Achievements() {
             </div>
             <div className="bottom row">
                 <div data-aos="zoom-in" data-aos-once={true} className="container">
-                    <AchievementStat Icon={faSmileBeam} value={100} text="Happy Clients" />
-                    <AchievementStat Icon={faPizzaSlice} value={1000} text="Pizzas Ordered" />
-                    <AchievementStat Icon={faQuoteRight} value={500} text="Reviews" />
-                    <AchievementStat Icon={faCode} value={50000} text="Lines of Code" />
+                    <AchievementStat Icon={faSmileBeam} value={10} text="Projects" />
+                    <AchievementStat Icon={faGithub} value={30} text="Repositories" />
+                    <AchievementStat Icon={faLaptopCode} value={10} text="Certifications" />
+                    <AchievementStat Icon={faCode} value={10000} text="Lines of Code" />
                 </div>
             </div>
         </div>

@@ -12,6 +12,7 @@ import shape9 from '../resources/9.png'
 import shape10 from '../resources/10.png'
 import profilePic from '../resources/mansi1.png'
 import '../css/HomeProfile.css'
+import resume from '../resources/Mansi_Sharma_resume.pdf'
 
 function HomeProfile() {
     return (
@@ -26,14 +27,16 @@ function HomeProfile() {
                     </div>
                     <Typewriter
                         options={{
-                            strings: ['A passionate learner', 'React Developer'],
+                            strings: ['A passionate learner', 'React Developer', 'Backend Enthusiast'],
                             autoStart: true,
                             loop: true,
                         }}
                     />
+                    <a href={resume} download style={{textDecoration: "none"}}>
                     <button className="hover-button">
                         <span>Download CV</span>
                     </button>
+                    </a>
                 </div>
                 <img src={shape1} className="animated fadeIn move-down float-image" alt="shape" style={{left: "0%", bottom: "74.7866%"}} />
                 <img src={shape10} className="animated fadeIn move-up float-image" alt="shape" style={{left: "10%", bottom: "20.2009%"}} />

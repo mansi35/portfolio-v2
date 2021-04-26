@@ -1,10 +1,13 @@
-import { faAngular, faAws, faReact } from '@fortawesome/free-brands-svg-icons'
-import { faPencilRuler, faRobot, faServer } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import Aos from "aos"
 import 'aos/dist/aos.css'
+import intuit from '../resources/intuit.png'
+import google from '../resources/google.png'
+import microsoft from '../resources/microsoft.png'
+import cisco from '../resources/cisco.png'
+import sakura from '../resources/sakura.png'
+import gdsc from '../resources/gdsc.png'
 
 function AchievementContainer() {
         useEffect(() => {
@@ -15,91 +18,55 @@ function AchievementContainer() {
             <Row>
 				<Col md={4} className="service">
 					<div data-aos="fade-right" data-aos-once={true}>
-					<div className="icon">
-						<FontAwesomeIcon icon={faReact} />
-					</div>
-					<h4>Front-end React</h4>
+					<img className="icon" src={intuit} height="50px" alt="intuit" />
+					<h4>Intuit Augment 2021</h4>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-						dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-						In et sem libero. Integer pretium, tellus eu pellentesque
-						tristique, ex libero maximus elit, mollis tristique urna eros
-						non tellus
+						I am one of the 9 students selected all over India for the Intuit Augment and Nurture program for 2nd year students that provides mentorship as well as internship opportunities with Intuit.
 					</p>
 					</div>
 				</Col>
 				<Col md={4} className="service border-side">
 					<div data-aos="fade-down" data-aos-once={true}>
-					<div className="icon">
-						<FontAwesomeIcon icon={faAngular} />
-					</div>
-					<h4>Angular Web App</h4>
+					<img className="icon" src={google} height="50px" alt="google" />
+					<h4>Google WTEF Scholar</h4>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-						dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-						In et sem libero. Integer pretium, tellus eu pellentesque
-						tristique, ex libero maximus elit, mollis tristique urna eros
-						non tellus
+						I am one of the 120 scholars selected all over India for the Women Techmakers Engineering Fellows Program conducted by Google with TalentSprint.
 					</p>
 					</div>
 				</Col>
 				<Col md={4} className="service">
 					<div data-aos="fade-left" data-aos-once={true}>
-					<div className="icon">
-						<FontAwesomeIcon icon={faAws} />
-					</div>
-					<h4>AWS Management</h4>
+					<img className="icon" src={microsoft} height="50px" alt="microsoft" />
+					<h4>Alpha MLSA</h4>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-						dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-						In et sem libero. Integer pretium, tellus eu pellentesque
-						tristique, ex libero maximus elit, mollis tristique urna eros
-						non tellus
+					Microsoft Learn Student Ambassadors are a global group of campus leaders who are eager to help fellow students, create robust tech communities and develop technical and career skills for the future.
 					</p>
 					</div>
 				</Col>
 				<Col md={4} className="service">
 				<div  data-aos="fade-right" data-aos-once={true}>
-					<div className="icon">
-						<FontAwesomeIcon icon={faPencilRuler} className="solid" />
-					</div>
-					<h4>UI/UX Design</h4>
+					<img className="icon" src={cisco} height="50px" alt="cisco" />
+					<h4>Cisco thingQbator Technical Head</h4>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-						dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-						In et sem libero. Integer pretium, tellus eu pellentesque
-						tristique, ex libero maximus elit, mollis tristique urna eros
-						non tellus
+					I am one of the core team members at Cisco thingQbator IGDTUW. Here I help conduct cohorts of students to build their ideas into working prototypes.
 					</p>
 					</div>
 				</Col>
 				<Col md={4} className="service border-side">
 				<div data-aos="fade-up" data-aos-once={true}>
-					<div className="icon">
-						<FontAwesomeIcon icon={faServer} className="solid" />
-					</div>
-					<h4>Linux Server Management</h4>
+					<img className="icon" src={sakura} height="50px" alt="sakura" />
+					<h4>JST Sakura Science Club Planning Coordinator</h4>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-						dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-						In et sem libero. Integer pretium, tellus eu pellentesque
-						tristique, ex libero maximus elit, mollis tristique urna eros
-						non tellus
+					I am responsible for planning meetups and promotions of Japan Science and Technology Sakura Science Club in India.
 					</p>
 					</div>
 				</Col>
 				<Col md={4} className="service">
 				<div data-aos="fade-left" data-aos-once={true}>
-					<div className="icon">
-						<FontAwesomeIcon icon={faRobot} className="solid" />
-					</div>
-					<h4>Artifical Intelligence</h4>
+					<img className="icon" src={gdsc} height="50px" alt="gdsc" />
+					<h4>Google Developers Student Clubs Mentor</h4>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-						dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-						In et sem libero. Integer pretium, tellus eu pellentesque
-						tristique, ex libero maximus elit, mollis tristique urna eros
-						non tellus
+					Mentor at Google Developer Student Clubs - IGDTUW for DSA Circle and Advanced Track Project Coordinator for Web Dev Circle
 					</p>
 					</div>
 				</Col>

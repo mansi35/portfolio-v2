@@ -9,12 +9,13 @@ function Skills() {
                 <h4>My Skills</h4>
             </div>
             <div className="skills-container">
-                <Progress name="Web Design" value={90} delay={1100} />
-                <Progress name="Angular" value={50} delay={1100} />
-                <Progress name="React" value={80} delay={1100} />
-                <Progress name="Vue" value={40} delay={1100} />
-                <Progress name="MongoDB" value={100} delay={1100} />
-                <Progress name="CSS" value={50} delay={1100} />
+                <Progress name="C++" value={90} delay={1100} />
+                <Progress name="Python" value={70} delay={1100} />
+                <Progress name="Golang" value={60} delay={1100} />
+                <Progress name="React" value={70} delay={1100} />
+                <Progress name="Node.js" value={60} delay={1100} />
+                <Progress name="Firebase" value={100} delay={1100} />
+                <Progress name="Unity" value={70} delay={1100} />
             </div>
         </div>
     )

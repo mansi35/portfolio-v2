@@ -2,6 +2,8 @@ import React from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick-theme.css'
 import EducationStat from './EducationStat'
+import ig from '../resources/igdtu.png'
+import dav from '../resources/dav.png'
 
 function EducationContainer() {
     const settings = {
@@ -28,25 +30,25 @@ function EducationContainer() {
                 <div className="animated fadeIn slow" style={{opacity: 1, height: "auto"}}>
                     <Slider {...settings}>
                         <EducationStat 
-                            instituteName="Great Service"
-                            educationContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet elit quam, et finibus leo feugiat quis. Ut in turpis vitae elit dapibus porta vel vitae justo. Fusce ut nisi blandit, pellentesque metus sed, hendrerit nisi. Duis aliquam ante non velit molestie, et laoreet enim consectetur. Duis rutrum mollis velit, id maximus elit finibus vel. Vestibulum ex sapien, pellentesque id finibus non, elementum bibendum ex. Curabitur vitae felis posuere, luctus lorem imperdiet, ultrices libero. Duis blandit venenatis felis, vitae vulputate mi. Aliquam vitae egestas tortor, eu congue ex. "
-                            instituteImg="https://retro-show-r3tr0.vercel.app/static/b29c87419d488dfd551cda9a7e6b49b4/c42a3/image.jpg"
-                            degree="Robert Doe"
-                            stream="Software Engineer"
+                            instituteName="Indira Gandhi Delhi Technical University for Women"
+                            educationContent="2019-2023"
+                            instituteImg={ig}
+                            degree="Bachelor of Technology (B.Tech)"
+                            stream="Computer Science Engineering"
                         />
                         <EducationStat 
-                            instituteName="Great Service"
-                            educationContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet elit quam, et finibus leo feugiat quis. Ut in turpis vitae elit dapibus porta vel vitae justo. Fusce ut nisi blandit, pellentesque metus sed, hendrerit nisi. Duis aliquam ante non velit molestie, et laoreet enim consectetur. Duis rutrum mollis velit, id maximus elit finibus vel. Vestibulum ex sapien, pellentesque id finibus non, elementum bibendum ex. Curabitur vitae felis posuere, luctus lorem imperdiet, ultrices libero. Duis blandit venenatis felis, vitae vulputate mi. Aliquam vitae egestas tortor, eu congue ex. "
-                            instituteImg="https://retro-show-r3tr0.vercel.app/static/b29c87419d488dfd551cda9a7e6b49b4/c42a3/image.jpg"
-                            degree="Robert Doe"
-                            stream="Software Engineer"
+                            instituteName="D.A.V. Public School, Shreshtha Vihar, Delhi"
+                            educationContent="2017-2018"
+                            instituteImg={dav}
+                            degree="Class 12th"
+                            stream="PCM with Computer Science"
                         />
                         <EducationStat 
-                            instituteName="Great Service"
-                            educationContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet elit quam, et finibus leo feugiat quis. Ut in turpis vitae elit dapibus porta vel vitae justo. Fusce ut nisi blandit, pellentesque metus sed, hendrerit nisi. Duis aliquam ante non velit molestie, et laoreet enim consectetur. Duis rutrum mollis velit, id maximus elit finibus vel. Vestibulum ex sapien, pellentesque id finibus non, elementum bibendum ex. Curabitur vitae felis posuere, luctus lorem imperdiet, ultrices libero. Duis blandit venenatis felis, vitae vulputate mi. Aliquam vitae egestas tortor, eu congue ex. "
-                            instituteImg="https://retro-show-r3tr0.vercel.app/static/b29c87419d488dfd551cda9a7e6b49b4/c42a3/image.jpg"
-                            degree="Robert Doe"
-                            stream="Software Engineer"
+                            instituteName="D.A.V. Public School, East of Loni Road, Delhi"
+                            educationContent="2015-2016"
+                            instituteImg={dav}
+                            degree="Class 10th"
+                            stream="Senior Secondary Education"
                         />
                     </Slider>
                 </div>

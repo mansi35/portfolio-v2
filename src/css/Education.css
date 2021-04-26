@@ -12,13 +12,13 @@
 
 @media (max-width: 767px) {
     .educations {
-        height: 1570px;
+        height: 1410px;
     }
 }
 
 @media (max-width: 280px) {
     .educations {
-        height: 1700px;
+        height: 1450px;
     }
 }
 
@@ -328,7 +328,7 @@
 
 @media (max-width: 767px) {
     .educations .row.top .content .baffle_text span {
-        font-size: 40px;
+        font-size: 30px;
         line-height: 40px;
     }
 }
@@ -343,7 +343,7 @@
 @media (max-width: 767px) {
     .educations .row.bottom {
         display: block;
-        min-height: 62%;
+        min-height: 65%;
     }
 }
 

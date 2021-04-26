@@ -86,11 +86,6 @@
     border-right: 1px solid #251170;
 }
 
-.icon svg {
-    font-size: 50px;
-    color: #eb83f8;
-}
-
 .service h4 {
     color: #fff;
     font-family: Poppins;
@@ -115,13 +110,13 @@
 
 @media (max-width: 767px) {
     .achievements .row.top .content .baffle_text span {
-        font-size: 40px;
+        font-size: 30px;
         line-height: 40px;
     }
 }
 
 .achievements .row.bottom {
-    min-height: 25%;
+    min-height: 20%;
     background-color: #251170;
     display: flex;
 }

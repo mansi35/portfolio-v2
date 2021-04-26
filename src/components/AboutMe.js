@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function AboutMe() {
     return (
@@ -9,14 +9,19 @@ function AboutMe() {
                 <div className="line-text">
                     <h4>About Me</h4>
                 </div>
-                <h3>I'm a Full Stack web developer working from home</h3>
+                <h3>I'm a backend enthusiast, exploring React</h3>
                 <div className="separator"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit nisi vitae feugiat vestibulum. Aliquam porta nulla vel odio scelerisque, pretium volutpat dui euismod. Integer porttitor dolor placerat malesuada dictum. Fusce enim dolor, dignissim quis ornare at, elementum nec turpis. Donec ac interdum libero, sed condimentum lectus. Nunc nec iaculis tortor. Donec interdum sollicitudin eros in pharetra. Donec ultricies laoreet dictum. Maecenas vestibulum sodales justo, id hendrerit orci aliquet gravida. Nulla facilisi.</p>
+                <p>"Hardwork beats talent when talent doesn't work hard.."<br /><br /> Well this is more or less the motto of my life. <br />
+
+                I love trying new things. So maybe you could call me a visionary, creating new methods and introducing new ideas. You'd always find me trying to convince my friends to try something new and exciting. Thinking what could be a better solution to a problem and how can I really help, and most importantly trying to learn by experiencing failure.
+                <br/><br/>
+                <h4>Fun fact about me:</h4> <br />
+                I made my own video conferencing application, which I use to chat with my friends ;)
+                </p>
                 <div className="social social_icons">
-                    <FontAwesomeIcon className="social_icon" icon={faGithub} />
-                    <FontAwesomeIcon className="social_icon" icon={faTwitter} />
-                    <FontAwesomeIcon className="social_icon" icon={faYoutube} />
-                    <FontAwesomeIcon className="social_icon" icon={faLinkedin} />
+                    <a href="https://gihub.com/mansi35"><FontAwesomeIcon className="social_icon" icon={faGithub} /></a>
+                    <a href="https://twitter.com/mansi035"><FontAwesomeIcon className="social_icon" icon={faTwitter} /></a>
+                    <a href="https://www.linkedin.com/in/mansi-sharma-617521191/"><FontAwesomeIcon className="social_icon" icon={faLinkedin} /></a>
                 </div>
             </div>
         </div>

@@ -1,25 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Particles from 'react-particles-js'
 import '../css/Contact.css'
 import BaffleText from './BaffleText'
+import Aos from "aos"
+import 'aos/dist/aos.css'
 
 function Contact() {
+
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, [])
+
     return (
         <div id="contact" className="contact">
             <div className="row">
                 <div class="side col-md-2">
                     <h2>
-                        {/*<BaffleText
-                            text="CONTACT"
-                            revealDuration={5000}
-                        />*/}
                         <BaffleText text="Contact" revealDuration={500} revealDelay={500} />
                     </h2>
                 </div>
 
                 <div class="form col-md-10">
                     <div class="animated fadeInUp fast" style={{opacity: 1, height: "auto", zIndex: 1}}>
-                        <div class="form-container">
+                        <div data-aos="fade-up" data-aos-once={true} class="form-container">
                             <div class="line-text">
                                 <h4>Get In Touch</h4>
                                 <div class="animated fadeInUp fast" style={{opacity: 1, height: "auto"}}>

@@ -12,7 +12,7 @@
 
 @media (max-width: 767px) {
     .portfolio {
-        height: 1900px;
+        height: 1950px;
     }
 }
 
@@ -75,7 +75,7 @@
 
 @media (max-width: 767px) {
     .portfolio .row .side .baffle .baffle_text span {
-        font-size: 40px;
+        font-size: 30px;
         line-height: 40px;
     }
 }
@@ -88,9 +88,7 @@
 }
 
 .portfolio .row .recent-works {
-    display: flex;
-    justify-items: center;
-    align-items: center;
+    margin: auto;
 }
 
 .portfolio .row .recent-works .portfolio_container {
