@@ -15,7 +15,7 @@ function EducationContainer() {
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 10000,
+        autoplaySpeed: 4000,
         loop: true,
     }
 
