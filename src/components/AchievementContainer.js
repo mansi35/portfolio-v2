@@ -4,7 +4,7 @@ import Aos from "aos"
 import 'aos/dist/aos.css'
 import intuit from '../resources/intuit.png'
 import google from '../resources/google.png'
-import microsoft from '../resources/microsoft.png'
+import microsoft from '../resources/LevelBeta.png'
 import cisco from '../resources/cisco.png'
 import sakura from '../resources/sakura.png'
 import gdsc from '../resources/gdsc.png'
@@ -21,7 +21,7 @@ function AchievementContainer() {
 					<img className="icon" src={intuit} height="50px" alt="intuit" />
 					<h4>Intuit Augment 2021</h4>
 					<p>
-						I am one of the 9 students selected all over India for the Intuit Augment and Nurture program for 2nd year students that provides mentorship as well as internship opportunities with Intuit.
+					I am one of the 9 students selected all over India for the Intuit Augment and Nurture program for 2nd year students that provides mentorship as well as internship opportunities with Intuit.
 					</p>
 					</div>
 				</Col>
@@ -30,14 +30,14 @@ function AchievementContainer() {
 					<img className="icon" src={google} height="50px" alt="google" />
 					<h4>Google WTEF Scholar</h4>
 					<p>
-						I am one of the 120 scholars selected all over India for the Women Techmakers Engineering Fellows Program conducted by Google with TalentSprint.
+					I am one of the 120 scholars selected all over India for the Women Techmakers Engineering Fellows Program conducted by Google with TalentSprint.
 					</p>
 					</div>
 				</Col>
 				<Col md={4} className="service">
 					<div data-aos="fade-left" data-aos-once={true}>
 					<img className="icon" src={microsoft} height="50px" alt="microsoft" />
-					<h4>Alpha MLSA</h4>
+					<h4>Beta MLSA</h4>
 					<p>
 					Microsoft Learn Student Ambassadors are a global group of campus leaders who are eager to help fellow students, create robust tech communities and develop technical and career skills for the future.
 					</p>
