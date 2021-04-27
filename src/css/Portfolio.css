@@ -141,9 +141,10 @@
 
 .portfolio .row .recent-works .portfolio_container .portfolio_item .Tilt .overlay span {
     z-index: 100;
-    color: #fff;
+    color: #251170;
     font-size: 20px;
     text-align: center;
+    font-family: Poppins;
 }
 
 .portfolio .row .recent-works .portfolio_container .portfolio_item .Tilt:hover>.overlay {

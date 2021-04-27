@@ -171,3 +171,29 @@
         height: 620px !important;
     }
 }
+
+.contact .row .form .social.social_icons {
+    margin: 0 auto;
+    margin-top: 70px;
+    z-index: 1;
+}
+
+.contact .row .form .social.social_icons svg {
+    height: 30px;
+    width: 30px;
+    margin: 0 20px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.contact .row .form .social.social_icons svg:hover {
+    color: #eb83f8;
+}
+
+.contact .row .form #sent_confirm {
+    position: absolute;
+    margin-top: 265px;
+    left: 50%;
+    color: #fff;
+    font-family: Poppins;
+}

@@ -19,7 +19,7 @@ function AboutMe() {
                 I made my own video conferencing application, which I use to chat with my friends ;)
                 </p>
                 <div className="social social_icons">
-                    <a href="https://gihub.com/mansi35"><FontAwesomeIcon className="social_icon" icon={faGithub} /></a>
+                    <a href="https://github.com/mansi35"><FontAwesomeIcon className="social_icon" icon={faGithub} /></a>
                     <a href="https://twitter.com/mansi035"><FontAwesomeIcon className="social_icon" icon={faTwitter} /></a>
                     <a href="https://www.linkedin.com/in/mansi-sharma-617521191/"><FontAwesomeIcon className="social_icon" icon={faLinkedin} /></a>
                 </div>

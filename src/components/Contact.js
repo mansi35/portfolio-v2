@@ -5,6 +5,8 @@ import BaffleText from './BaffleText'
 import Aos from "aos"
 import 'aos/dist/aos.css'
 import emailjs from 'emailjs-com'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function Contact() {
 
@@ -18,8 +20,16 @@ function Contact() {
         emailjs.sendForm('service_jqhu4pn', 'template_o60tcgt', e.target, 'user_G7N6V58OlazIVjkudDir7')
         .then((result) => {
             console.log(result.text);
+            document.getElementById("confirm").innerHTML = "Message Sent";
+            setTimeout(() => { 
+                document.getElementById("confirm").innerHTML = ""; 
+            }, 5000);
         }, (error) => {
             console.log(error.text);
+            document.getElementById("confirm").innerHTML = "Uh oh! Something just broke.<br />Unable to send the message. Please try again!"
+            setTimeout(() => { 
+                document.getElementById("confirm").innerHTML = ""; 
+            }, 5000);
         });
 
         e.target.reset();
@@ -64,6 +74,14 @@ function Contact() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div id="sent_confirm">
+                        <div id="confirm" style={{position: "relative", left: "-50%"}}></div>
+                    </div>
+                    <div className="social social_icons">
+                        <a href="https://github.com/mansi35"><FontAwesomeIcon className="social_icon" icon={faGithub} /></a>
+                        <a href="https://www.linkedin.com/in/mansi-sharma-617521191/"><FontAwesomeIcon className="social_icon" icon={faLinkedin} /></a>
+                        <a href="https://twitter.com/mansi035"><FontAwesomeIcon className="social_icon" icon={faTwitter} /></a>
                     </div>
                 </form>
             </div>
