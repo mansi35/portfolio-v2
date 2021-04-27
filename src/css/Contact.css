@@ -197,3 +197,11 @@
     color: #fff;
     font-family: Poppins;
 }
+
+@media (max-width: 280px) {
+    .contact .row .form .social.social_icons svg {
+        height: 20px;
+        width: 20px;
+        margin: 0 10px;
+    }
+}
