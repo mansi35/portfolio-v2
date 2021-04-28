@@ -30,7 +30,7 @@ function AchievementContainer() {
 					<img className="icon" src={google} height="50px" alt="google" />
 					<h4>Google WTEF Scholar</h4>
 					<p>
-					I am one of the 120 scholars selected all over India for the Women Techmakers Engineering Fellows Program conducted by Google with TalentSprint.
+					I am one of the 126 scholars selected all over India for the Women Techmakers Engineering Fellows Program conducted by Google with TalentSprint.
 					</p>
 					</div>
 				</Col>

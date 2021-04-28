@@ -116,3 +116,7 @@
     transition: .2s;
     cursor: pointer;
 }
+
+.about .row .content .social_icons .social_icon:hover {
+    color: #eb83f8;
+}

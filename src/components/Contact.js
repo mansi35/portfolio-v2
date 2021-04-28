@@ -79,9 +79,9 @@ function Contact() {
                         <div id="confirm" style={{position: "relative", left: "-50%"}}></div>
                     </div>
                     <div className="social social_icons">
-                        <a href="https://github.com/mansi35"><FontAwesomeIcon className="social_icon" icon={faGithub} /></a>
-                        <a href="https://www.linkedin.com/in/mansi-sharma-617521191/"><FontAwesomeIcon className="social_icon" icon={faLinkedin} /></a>
-                        <a href="https://twitter.com/mansi035"><FontAwesomeIcon className="social_icon" icon={faTwitter} /></a>
+                        <a href="https://github.com/mansi35" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="social_icon" icon={faGithub} /></a>
+                        <a href="https://www.linkedin.com/in/mansi-sharma-617521191/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="social_icon" icon={faLinkedin} /></a>
+                        <a href="https://twitter.com/mansi035" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="social_icon" icon={faTwitter} /></a>
                     </div>
                 </form>
             </div>

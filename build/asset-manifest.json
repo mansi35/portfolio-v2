@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/~mansi_sharma/static/css/main.6079dd5b.chunk.css",
-    "main.js": "/~mansi_sharma/static/js/main.aa61fabc.chunk.js",
-    "main.js.map": "/~mansi_sharma/static/js/main.aa61fabc.chunk.js.map",
+    "main.css": "/~mansi_sharma/static/css/main.7941b8e4.chunk.css",
+    "main.js": "/~mansi_sharma/static/js/main.80d8e5c4.chunk.js",
+    "main.js.map": "/~mansi_sharma/static/js/main.80d8e5c4.chunk.js.map",
     "runtime-main.js": "/~mansi_sharma/static/js/runtime-main.d8853328.js",
     "runtime-main.js.map": "/~mansi_sharma/static/js/runtime-main.d8853328.js.map",
     "static/css/2.64ff39f1.chunk.css": "/~mansi_sharma/static/css/2.64ff39f1.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.27a008ac.chunk.js.map": "/~mansi_sharma/static/js/3.27a008ac.chunk.js.map",
     "index.html": "/~mansi_sharma/index.html",
     "static/css/2.64ff39f1.chunk.css.map": "/~mansi_sharma/static/css/2.64ff39f1.chunk.css.map",
-    "static/css/main.6079dd5b.chunk.css.map": "/~mansi_sharma/static/css/main.6079dd5b.chunk.css.map",
+    "static/css/main.7941b8e4.chunk.css.map": "/~mansi_sharma/static/css/main.7941b8e4.chunk.css.map",
     "static/js/2.b2a2abf4.chunk.js.LICENSE.txt": "/~mansi_sharma/static/js/2.b2a2abf4.chunk.js.LICENSE.txt",
     "static/media/LevelBeta.c5fc450d.png": "/~mansi_sharma/static/media/LevelBeta.c5fc450d.png",
     "static/media/Mansi_Sharma_resume.2f8cbb28.pdf": "/~mansi_sharma/static/media/Mansi_Sharma_resume.2f8cbb28.pdf",
@@ -38,7 +38,7 @@
     "static/js/runtime-main.d8853328.js",
     "static/css/2.64ff39f1.chunk.css",
     "static/js/2.b2a2abf4.chunk.js",
-    "static/css/main.6079dd5b.chunk.css",
-    "static/js/main.aa61fabc.chunk.js"
+    "static/css/main.7941b8e4.chunk.css",
+    "static/js/main.80d8e5c4.chunk.js"
   ]
 }
