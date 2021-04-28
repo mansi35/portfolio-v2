@@ -50,17 +50,17 @@ function Contact() {
                                 <h4>Get In Touch</h4>
                                 <div class="animated fadeInUp fast" style={{opacity: 1, height: "auto"}}>
                                     <div class="form-group">
-                                        <input type="text" class="name" placeholder="Name" name="from_name" />
+                                        <input type="text" class="name" placeholder="Name" name="from_name" required />
                                     </div>
                                 </div>
                                 <div class="animated fadeInUp fast" style={{opacity: 1, height: "auto"}}>
                                     <div class="form-group">
-                                        <input type="email" class="email" placeholder="Email" name="from_email" />
+                                        <input type="email" class="email" placeholder="Email" name="from_email" required />
                                     </div>
                                 </div>
                                 <div class="animated fadeInUp fast" style={{opacity: 1, height: "auto"}}>
                                     <div class="form-group">
-                                        <textarea class="message " placeholder="Message" name="message"></textarea>
+                                        <textarea class="message " placeholder="Message" name="message" required></textarea>
                                     </div>
                                 </div>
                                 <div class="animated fadeInUp fast" style={{opacity: 1, height: "auto"}}>
