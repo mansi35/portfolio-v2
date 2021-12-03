@@ -12,7 +12,7 @@ function PortfolioProject({title, image, url}) {
         <div data-aos="zoom-in" data-aos-once={true} className="portfolio_item col-md-4">
             <div style={{opacity: 1, height: "auto"}}>
                 <a href={url} target="_blank" rel="noopener noreferrer">
-                <img src={image} alt="Front-end Project" style={{maxHeight: "263.9px"}} />
+                <img src={image} alt="Project" style={{height: "263px"}} />
                 <Tilt className="Tilt" options={{ scale: 1, max: 50 }}>                                
                     <div className="overlay">
                         <span className="title">{title}</span>

@@ -32,7 +32,7 @@ function Achievements() {
             <div className="bottom row">
                 <div data-aos="zoom-in" data-aos-once={true} className="container">
                     <AchievementStat Icon={faSmileBeam} value={10} text="Projects" />
-                    <AchievementStat Icon={faGithub} value={30} text="Repositories" />
+                    <AchievementStat Icon={faGithub} value={35} text="Repositories" />
                     <AchievementStat Icon={faLaptopCode} value={10} text="Certifications" />
                     <AchievementStat Icon={faCode} value={10000} text="Lines of Code" />
                 </div>

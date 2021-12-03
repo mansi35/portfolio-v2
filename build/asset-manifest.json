@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/~mansi_sharma/static/css/main.7941b8e4.chunk.css",
-    "main.js": "/~mansi_sharma/static/js/main.688cc6c3.chunk.js",
-    "main.js.map": "/~mansi_sharma/static/js/main.688cc6c3.chunk.js.map",
+    "main.css": "/~mansi_sharma/static/css/main.bc988c31.chunk.css",
+    "main.js": "/~mansi_sharma/static/js/main.afd26ef9.chunk.js",
+    "main.js.map": "/~mansi_sharma/static/js/main.afd26ef9.chunk.js.map",
     "runtime-main.js": "/~mansi_sharma/static/js/runtime-main.d8853328.js",
     "runtime-main.js.map": "/~mansi_sharma/static/js/runtime-main.d8853328.js.map",
     "static/css/2.64ff39f1.chunk.css": "/~mansi_sharma/static/css/2.64ff39f1.chunk.css",
@@ -12,14 +12,13 @@
     "static/js/3.27a008ac.chunk.js.map": "/~mansi_sharma/static/js/3.27a008ac.chunk.js.map",
     "index.html": "/~mansi_sharma/index.html",
     "static/css/2.64ff39f1.chunk.css.map": "/~mansi_sharma/static/css/2.64ff39f1.chunk.css.map",
-    "static/css/main.7941b8e4.chunk.css.map": "/~mansi_sharma/static/css/main.7941b8e4.chunk.css.map",
+    "static/css/main.bc988c31.chunk.css.map": "/~mansi_sharma/static/css/main.bc988c31.chunk.css.map",
     "static/js/2.b2a2abf4.chunk.js.LICENSE.txt": "/~mansi_sharma/static/js/2.b2a2abf4.chunk.js.LICENSE.txt",
     "static/media/LevelBeta.c5fc450d.png": "/~mansi_sharma/static/media/LevelBeta.c5fc450d.png",
-    "static/media/Mansi_Sharma_resume.2f8cbb28.pdf": "/~mansi_sharma/static/media/Mansi_Sharma_resume.2f8cbb28.pdf",
+    "static/media/Resume_Mansi_Sharma.2a83a1ca.pdf": "/~mansi_sharma/static/media/Resume_Mansi_Sharma.2a83a1ca.pdf",
     "static/media/aclone.6fde7a57.png": "/~mansi_sharma/static/media/aclone.6fde7a57.png",
     "static/media/cblocks.f59a81cd.png": "/~mansi_sharma/static/media/cblocks.f59a81cd.png",
     "static/media/cisco.9781e14e.png": "/~mansi_sharma/static/media/cisco.9781e14e.png",
-    "static/media/coderita.fbf072b9.png": "/~mansi_sharma/static/media/coderita.fbf072b9.png",
     "static/media/cour.431ae41c.png": "/~mansi_sharma/static/media/cour.431ae41c.png",
     "static/media/dav.56b1f46e.png": "/~mansi_sharma/static/media/dav.56b1f46e.png",
     "static/media/fclone.bfc76655.png": "/~mansi_sharma/static/media/fclone.bfc76655.png",
@@ -28,6 +27,8 @@
     "static/media/intuit.5ed9951a.png": "/~mansi_sharma/static/media/intuit.5ed9951a.png",
     "static/media/mafia.3ad5e945.PNG": "/~mansi_sharma/static/media/mafia.3ad5e945.PNG",
     "static/media/mansi_sharma.7f11ec75.jpg": "/~mansi_sharma/static/media/mansi_sharma.7f11ec75.jpg",
+    "static/media/microsoft.f7215317.png": "/~mansi_sharma/static/media/microsoft.f7215317.png",
+    "static/media/msengage.2bc4be27.png": "/~mansi_sharma/static/media/msengage.2bc4be27.png",
     "static/media/navalCode.7aeae3a9.png": "/~mansi_sharma/static/media/navalCode.7aeae3a9.png",
     "static/media/remo.27a3dbdb.jpeg": "/~mansi_sharma/static/media/remo.27a3dbdb.jpeg",
     "static/media/sakura.f3f8ddca.png": "/~mansi_sharma/static/media/sakura.f3f8ddca.png",
@@ -38,7 +39,7 @@
     "static/js/runtime-main.d8853328.js",
     "static/css/2.64ff39f1.chunk.css",
     "static/js/2.b2a2abf4.chunk.js",
-    "static/css/main.7941b8e4.chunk.css",
-    "static/js/main.688cc6c3.chunk.js"
+    "static/css/main.bc988c31.chunk.css",
+    "static/js/main.afd26ef9.chunk.js"
   ]
 }

@@ -12,7 +12,7 @@ import shape9 from '../resources/9.png'
 import shape10 from '../resources/10.png'
 import profilePic from '../resources/mansi_sharma.jpg'
 import '../css/HomeProfile.css'
-import resume from '../resources/Mansi_Sharma_resume.pdf'
+import resume from '../resources/Resume_Mansi_Sharma.pdf'
 
 function HomeProfile() {
     return (

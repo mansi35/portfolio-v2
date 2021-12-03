@@ -9,7 +9,7 @@ function AboutMe() {
                 <div className="line-text">
                     <h4>About Me</h4>
                 </div>
-                <h3>I'm a backend enthusiast, exploring React</h3>
+                <h3>I'm a Backend Enthusiast, and a React Developer</h3>
                 <div className="separator"></div>
                 <p>"Hardwork beats talent when talent doesn't work hard.."<br /><br /> Well this is more or less the motto of my life. <br />
 

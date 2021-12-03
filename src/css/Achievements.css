@@ -1,135 +1,142 @@
 .achievements {
-    height: 754px;
-    background-color: #000;
-    position: relative;
+  height: 754px;
+  background-color: #000;
+  position: relative;
 }
 
 @media (min-width: 768px) {
-    .achievements {
-        height: 100vh;
-    }
+  .achievements {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 767px) {
-    .achievements {
-        height: 2300px;
-    }
+  .achievements {
+    height: 2800px;
+  }
 }
 
 @media (max-width: 320px) {
-    .achievements {
-        height: 2400px;
-    }
+  .achievements {
+    height: 3000px;
+  }
 }
 
 @media (max-width: 280px) {
-    .achievements {
-        height: 2750px;
-    }
+  .achievements {
+    height: 3350px;
+  }
 }
 
 .achievements .row.top {
-    display: flex;
-    min-height: 75%;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  display: flex;
+  min-height: 75%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
-    .achievements .row.top {
-        min-height: 75%;
-        padding-top: 50px;
-        margin-bottom: 30px;
-    }
+  .achievements .row.top {
+    min-height: 75%;
+    padding-top: 50px;
+    margin-bottom: 30px;
+  }
 }
 
 .achievements .row.top .content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 2% 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2% 5%;
 }
 
 .achievements .row.top .content .achievements_container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .achievements .row.top .content .achievements_container .container {
-    max-width: 1600px;
-    overflow: hidden;
+  max-width: 1600px;
+  overflow: hidden;
 }
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1400px;
 }
 
 .service {
-    text-align: center;
-    margin: 20px 0;
-    padding: 0 40px;
+  text-align: center;
+  margin: 20px 0;
+  padding: 0 40px;
 }
 
 @media (max-width: 768px) {
-    .service {
-        padding: 0 5px;
-        margin-bottom: 50px;
-    }
+  .service {
+    padding: 0 5px;
+    margin-bottom: 50px;
+  }
 }
 
-.service.border-side {
-    border-left: 1px solid #251170;
-    border-right: 1px solid #251170;
+.service.border-side-left {
+  border-left: 1px solid #251170;
+  border-right: 1px solid #251170;
+}
+
+.service.border-side-right {
+  border-right: 1px solid #251170;
+  border-left: 1px solid #251170;
+  margin-left: -1px;
 }
 
 .service h4 {
-    color: #fff;
-    font-family: Poppins;
-    margin: 15px 0 9px;
-    font-size: 20px;
+  color: #fff;
+  font-family: Poppins;
+  margin: 15px 0 9px;
+  font-size: 20px;
 }
 
 .service p {
-    font-family: Geneva, Tahoma, sans-serif;
-    color: #eee;
-    font-size: 11px;
-    font-weight: 300;
+  font-family: Geneva, Tahoma, sans-serif;
+  color: #eee;
+  font-size: 11px;
+  font-weight: 300;
 }
 
 .achievements .row.top .content .baffle_text span {
-    color: #fff;
-    font-family: Poppins;
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 800;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
 }
 
 @media (max-width: 767px) {
-    .achievements .row.top .content .baffle_text span {
-        font-size: 30px;
-        line-height: 40px;
-    }
+  .achievements .row.top .content .baffle_text span {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .achievements .row.bottom {
-    min-height: 20%;
-    background-color: #251170;
-    display: flex;
+  min-height: 20%;
+  background-color: #251170;
+  display: flex;
 }
 
 .achievements .row.bottom .container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
-    .achievements .row.bottom .container {
-        display: block;
-    }
+  .achievements .row.bottom .container {
+    display: block;
+  }
 }
 
 /* @media (max-width: 769px) {
@@ -139,34 +146,34 @@
 } */
 
 .achievements .row.bottom .container .counter_component {
-    text-align: center;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
-    .achievements .row.bottom .container .counter_component {
-        padding: 20px;
-    }
+  .achievements .row.bottom .container .counter_component {
+    padding: 20px;
+  }
 }
 
 .achievements .row.bottom .container .counter_component .icon svg {
-    color: #fff !important;
-    font-size: 28px !important;
-    height: 36px !important;
+  color: #fff !important;
+  font-size: 28px !important;
+  height: 36px !important;
 }
 
 .achievements .row.bottom .container .counter_component .value span {
-    color: #fff;
-    font-size: 30px;
+  color: #fff;
+  font-size: 30px;
 }
 
 .achievements .row.bottom .container .counter_component .value .symbol {
-    position: absolute;
-    font-size: 17px;
-    color: #eb83f8;
+  position: absolute;
+  font-size: 17px;
+  color: #eb83f8;
 }
 
 .achievements .row.bottom .container .counter_component .text {
-    color: #fff;
-    font-size: 14px;
-    line-height: 15px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 15px;
 }
